@@ -1,42 +1,51 @@
 # Student Management API
 
-## Technologies Used
+A RESTful Student Management API built with Node.js, Express.js, and MongoDB. 
+This API provides endpoints to create, read, update, and delete student records 
+with input validation and proper error handling.
+
+## 🚀 Features
+
+- Create a new student
+- Get all students
+- Get a student by ID
+- Update student details
+- Delete a student
+- Input validation
+- Email validation
+- Duplicate email prevention
+- MongoDB database integration
+- Proper HTTP status codes
+- Error handling
+- Environment variable configuration
+
+## 🛠️ Technologies Used
 
 - Node.js
 - Express.js
 - MongoDB
 - Mongoose
+- dotenv
+- JavaScript
+- Git & GitHub
 
-## Installation
+## 📁 Project Structure
 
-npm install
-
-## Environment Variables
-
-Create a .env file:
-
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-
-## Run Project
-
-npm run dev
-
-## API Endpoints
-
-POST /api/students
-GET /api/students
-GET /api/students/:id
-PUT /api/students/:id
-DELETE /api/students/:id
-
-## Sample Request Body
-
-{
-  "name": "Deepak",
-  "email": "deepak@gmail.com",
-  "class": "BTech IT",
-  "age": 21,
-  "phone": "9876543210",
-  "city": "Erode"
-}
+```text
+student_api/
+│
+├── controllers/
+│   └── studentController.js
+│
+├── models/
+│   └── Student.js
+│
+├── routes/
+│   └── studentRoutes.js
+│
+├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── server.js
+└── README.md
